@@ -1,6 +1,6 @@
 # JobScanner
 
-**An agentic job-application pipeline.** Give it a job posting (or let it discover roles), and it scores your résumé against the JD, *honestly* tailors a LaTeX résumé to clear an ATS threshold, then writes a matching cover letter and a recruiter-outreach email — all grounded in your real experience. Nothing is ever auto-sent.
+**An agentic job-application pipeline.** Give it a job posting (or let it discover roles), and it scores your résumé against the Job description, *honestly* tailors a LaTeX résumé to clear an ATS threshold, then writes a matching cover letter and a recruiter-outreach email — all grounded in your real experience. Nothing is ever auto-sent.
 
 Built on [Agno](https://github.com/agno-agi/agno) for multi-agent orchestration, Anthropic Claude for the writing/reasoning agents, and free public job-board APIs (Greenhouse / Lever / Ashby) for discovery.
 
