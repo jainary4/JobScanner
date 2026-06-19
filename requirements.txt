@@ -1,0 +1,19 @@
+
+# Job-hunt pipeline (job_hunt_latex.py) — Python deps
+# Install:  pip install -r requirements.txt
+# Python 3.10+ recommended.
+ 
+agno==2.6.17          # multi-agent framework (Agent, Workflow, ExaTools)
+anthropic>=0.40       # Claude model backend used by agno.models.anthropic
+exa_py>=1.0           # required by agno.tools.exa (company research)
+requests>=2.31        # job search + recruiter-email lookups
+pydantic>=2.0         # typed agent outputs (ATSResult, TailoringReport)
+
+ 
+# ---------------------------------------------------------------------------
+# NOT a pip package — install separately for tailored_resume.pdf / cover_letter.pdf:
+#   LaTeX compiler. Either:
+#     - TeX Live (gives pdflatex/xelatex):  Ubuntu: sudo apt install texlive-full
+#                                           macOS:  brew install --cask mactex
+#     - or Tectonic (single binary):        https://tectonic-typesetting.github.io
+# Without one, the pipeline still runs and writes .tex (PDF step is skipped).
